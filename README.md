@@ -1,0 +1,34 @@
+# @philiprehberger/hash-kit
+
+Simple cross-platform hashing utilities.
+
+## Installation
+
+```bash
+npm install @philiprehberger/hash-kit
+```
+
+## Usage
+
+```ts
+import { hash } from '@philiprehberger/hash-kit';
+
+const checksum = hash.murmur3('cache-key');            // sync, fast
+const digest = await hash.sha256('hello');              // cross-platform
+const sig = await hash.hmac(secret, payload, 'SHA-256'); // HMAC
+```
+
+## API
+
+| Function | Description |
+|----------|-------------|
+| `hash.murmur3(input, seed?)` | MurmurHash3 (sync) |
+| `hash.sha256(input)` | SHA-256 via Web Crypto |
+| `hash.sha512(input)` | SHA-512 via Web Crypto |
+| `hash.hmac(key, data, algorithm?)` | HMAC signing |
+| `toHex(buffer)` | ArrayBuffer to hex string |
+| `toUint8Array(input)` | String to Uint8Array |
+
+## License
+
+MIT
