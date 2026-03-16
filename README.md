@@ -1,5 +1,9 @@
 # @philiprehberger/hash-kit
 
+[![CI](https://github.com/philiprehberger/hash-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/hash-kit/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@philiprehberger/hash-kit.svg)](https://www.npmjs.com/package/@philiprehberger/hash-kit)
+[![License](https://img.shields.io/github/license/philiprehberger/hash-kit)](LICENSE)
+
 Simple cross-platform hashing utilities.
 
 ## Installation
