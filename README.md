@@ -1,6 +1,6 @@
 # @philiprehberger/ts-hash-kit
 
-[![CI](https://github.com/philiprehberger/ts-hash-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-hash-kit/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/ts-hash-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/ts-hash-kit/actions/workflows/publish.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-hash-kit.svg)](https://www.npmjs.com/package/@philiprehberger/ts-hash-kit)
 [![License](https://img.shields.io/github/license/philiprehberger/ts-hash-kit)](LICENSE)
 
@@ -32,6 +32,15 @@ const sig = await hash.hmac(secret, payload, 'SHA-256'); // HMAC
 | `hash.hmac(key, data, algorithm?)` | HMAC signing |
 | `toHex(buffer)` | ArrayBuffer to hex string |
 | `toUint8Array(input)` | String to Uint8Array |
+
+
+## Development
+
+```bash
+npm install
+npm run build
+npm test
+```
 
 ## License
 
