@@ -1,21 +1,21 @@
-# @philiprehberger/ts-hash-kit
+# @philiprehberger/hash-kit
 
 [![CI](https://github.com/philiprehberger/ts-hash-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/ts-hash-kit/actions/workflows/publish.yml)
-[![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-hash-kit.svg)](https://www.npmjs.com/package/@philiprehberger/ts-hash-kit)
+[![npm version](https://img.shields.io/npm/v/@philiprehberger/hash-kit.svg)](https://www.npmjs.com/package/@philiprehberger/hash-kit)
 [![License](https://img.shields.io/github/license/philiprehberger/ts-hash-kit)](LICENSE)
 
-Simple cross-platform hashing utilities.
+Simple cross-platform hashing utilities
 
 ## Installation
 
 ```bash
-npm install @philiprehberger/ts-hash-kit
+npm install @philiprehberger/hash-kit
 ```
 
 ## Usage
 
 ```ts
-import { hash } from '@philiprehberger/ts-hash-kit';
+import { hash } from '@philiprehberger/hash-kit';
 
 const checksum = hash.murmur3('cache-key');            // sync, fast
 const digest = await hash.sha256('hello');              // cross-platform
